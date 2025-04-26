@@ -35,13 +35,37 @@ It aims to explore trends, seasonal patterns, and correlations with economic/dem
 ---
 
 ## 📂 Files in This Repository  
-📂 Crime-Data-Analysis/
-│── 📄 README.md  (Project overview)
-│── 📂 data/  (Contains information regarding the dataset used)
-│── 📂 docs/  (PDF report)
-│── 📂 notebooks/  (contains ipynb code file)
-│── 📂 src/
+Crime_Data_Analysis/
+├── data/
+│   ├── raw/
+│   │   ├── Crime_Data_from_2020_to_Present.csv  <-- Downloaded by user
+│   │   └── economic factors.csv
+│   └── processed/  <-- Created automatically by the code
+│       └── cleaned_crime_data.csv  <-- Generated when code runs
+├── results/  <-- Created automatically by the code
+│   ├── crime_analysis_summary.png
+│   ├── crime_forecast.png
+│   ├── economic_correlation.png
+│   └── forecast_components.png
+├── docs/
+├── notebooks/
+├── src/
+│   ├── __init__.py
+│   ├── analysis.py
+│   ├── data_processing.py (or data_preprocessing.py)
+│   ├── forecasting.py
+│   └── visualization.py
+├── .gitignore
+├── README.md
+├── main.py
+└── requirements.txt
 
+---
+
+## Install required packages:
+- pip install -r requirements.txt
+- Download the required datasets:[Crime Data from 2020 to Present](https://data.lacity.org/Public-Safety/Crime-Data-from-2020-to-Present/2nrs-mtv8) (196.77 MB)
+- Place the downloaded datasets in the `data/raw/` directory
 
 ---
 
